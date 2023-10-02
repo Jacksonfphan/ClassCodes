@@ -7,7 +7,9 @@ int main (){
     cin>>x;
     int i = 2;
     while (i <= x){
-        cout << i << "\n";
-        i = i + 2;
+        cout << x * i << "\n";
+        i++;
+
+        
     }
 }
