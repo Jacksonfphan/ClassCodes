@@ -10,7 +10,7 @@
     int c = 1;
     cout << "Enter a number.\n";
     cin >> x;
-    while (x > 0){
+    while (x != 0){
         total += x;
         cout << "Enter a number. \n";
         cin >> x;
