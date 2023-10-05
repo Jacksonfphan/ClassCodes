@@ -4,9 +4,10 @@
  using namespace std;
  int main (){
     int c = 1;
+    int total = 0;
     while (c <= 50){
-        cout << c << " ";
-        c = c + 2;        
+        total += c;
+        c = c + 2;
     }
-   cout << "\n";
+   cout << total << "\n";
  }
