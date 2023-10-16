@@ -5,22 +5,30 @@
   using namespace std;
   int main () {
     cout << "Enter a line of text \n";
-    string s, f = "";
-    getline(cin, s);
+    string input = "";
+    getline(cin, input);
     int c = 0;
-    int p = 0;
     bool aword = true;
-    while (c < s.length()) {
-        
-        if (s[c] == ' ') {
-         if (s[c+1] == 'a') {
-            p = s[c+1];
-            f = f + s[c+1];                    
+    while (c < input.length()) {
+        if (input[0] == 'a') {
+          break;
         }
+        else if (input[c] == ' ' && input[c+1] == 'a') {         
+          aword = true;
+          c = c+1;
+           break;                                          
+        } else {
+          aword = false;
         }
-        c++;    
+        c++;
+        }    
+    if (aword) {
+      cout << "'a' word is found at " << c << endl;
+      } else {
+        cout << "not found \n";
+      }
+    
     }
-    cout << "'a' word is found at " << p << endl;
-    }
+  
    
       
