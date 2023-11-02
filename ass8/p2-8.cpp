@@ -10,10 +10,14 @@ int main () {
     bool sort = true;
     n = s[0];
     for (int c = 0; c < s.length(); c++) {
+        // if there is a break (a space in this case), check the first letter of the name against the previous one for alphabetical order
         if (s[c] == ' ') {
+            // if the next one comes next alphabetically, store that letter in n
             if (s[c + 1] > n) {
                 n = s[c+1];
-            } else {
+            } 
+            // otherwise the names are not sorted, break out of the loop and print as such
+            else {
                 sort = false;
                 break;
             }
