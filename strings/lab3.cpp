@@ -12,9 +12,8 @@ int main () {
     while (count < input.length()) {
         if (input[count] == ' ') {
             if (word1.length() > longw.length()) {
-                longw = word1; 
-                                                                          
-            }word1 = "";
+                longw = word1;                                                                           
+            } word1 = "";
         }else {
             word1 += input[count];
         }
