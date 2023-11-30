@@ -6,6 +6,7 @@
  int main () {
     vector<double> input;
     int x;
+    int y;
     do {
         cin >> x;
         input.push_back(x);
@@ -15,8 +16,10 @@
         int counter = 0;
         for (int j = 0; j < input.size(); j++) {
             if (input[i] == input[j])
-            counter++;                                                                                                                                                                                                                                                                                                                                                                                        
+            counter++; 
+            y = j;                                                                                                                                                                                                                                                                                                                                                                                      
         }
+        input.erase(input.begin() + y);
         cout << input[i] << " appears " << counter << " times\n";
     }
 }                                                                                                                                                                                                                                                                                                                                                           
