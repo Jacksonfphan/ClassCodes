@@ -1,6 +1,6 @@
 /*Develop a program that reads integers into a vector until 0 is entered, then counts the frequency of each element and
  prints the elements along with their frequencies.*/
-  #include<iostream>
+ #include<iostream>
  #include<vector>
  using namespace std;
  int main () {
