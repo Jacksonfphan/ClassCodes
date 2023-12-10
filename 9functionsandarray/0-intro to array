@@ -1,0 +1,6 @@
+/*arrays are similar to list and vector
+int a[5] defines an array of integers with a size of 5
+    string names[] = {"John", "Alex", "Jones"}
+    string names[3] = { "John", "Alex", "Jones"}
+    
+*/
